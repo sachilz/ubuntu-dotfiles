@@ -1,14 +1,13 @@
-#!/usr/bin/env bash
-set -e
+#!/bin/bash
 
-# Install required packages here.
-# Example: sudo apt update && sudo apt install -y <packages>
+echo "Starting Ubuntu setup..."
 
-# Restore dconf settings here.
-# Example: dconf load / < backup/ubuntu-customization-backup.dconf
+sudo apt update
 
-# Copy wallpapers into place here.
-# Example: cp wallpapers/* ~/Pictures/Wallpapers/
+sudo apt install -y \
+git \
+gnome-tweaks \
+gnome-shell-extension-manager \
+bibata-cursor-theme
 
-# Copy fonts into place here.
-# Example: cp fonts/* ~/.local/share/fonts/
+echo "Setup completed!"
